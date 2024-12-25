@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Akreditasi</title>
+    <!-- link icon boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- penutup link icon boostrap -->
     <link rel="stylesheet" href="profil.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -56,7 +59,8 @@
                                 <li><a class="dropdown-item" href="../fasilitas/mesjid.html">Mesjid</a></li>
                                 <li><a class="dropdown-item" href="../fasilitas/aula.html">Aula</a></li>
                                 <li><a class="dropdown-item" href="../fasilitas/lab_komputer.html">Lab Komputer</a></li>
-                                <li><a class="dropdown-item" href="../fasilitas/sarana_olahraga.html">Sarana Olahraga</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas/sarana_olahraga.html">Sarana
+                                        Olahraga</a></li>
                                 <li><a class="dropdown-item" href="../fasilitas/perpustakaan.html">Perpustakaan</a></li>
                             </ul>
                         </li>
@@ -79,12 +83,6 @@
                                 <li><a class="dropdown-item" href="#">LPPM</a></li>
                                 <li><a class="dropdown-item" href="#">UPM</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <!-- navbar kontak -->
-                            <p class="nav-link active kontak" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Kontak
-                            </p>
                         </li>
                     </ul>
                 </div>
@@ -158,38 +156,50 @@
     <!-- content akreditasi -->
     <div class="container px-4 text-center">
         <div class="row gx-5">
-          <div class="col">
-           <div class="p-3">
-            <div class="card" style="width: 20rem;">
-                <div class="card-body text-start">
-                  <h5 class="card-title text-center pb-5">Akreditasi Institusi</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">kreditasi C (BAN PT No. 345/SK/BAN-PT/Akred/PT/XII/2018)</h6>
-                  <p class="card-text">Download Sertifikat dan SK Akreditasi Institusi STT Cipasung <br> <br>
-                    <a href="https://drive.google.com/file/d/1Dz93vL4h584fuGtgENJYKO0AY6fuJGGk/view" class="text-success text-decoration-none">Sertifikat</a> | SK Akreditasi</p>
-                </div>
-              </div>
-           </div>
-          </div>
-          <div class="col">
-            <div class="p-3">
-                <div class="card" style="width: 20rem;">
-                    <div class="card-body text-start">
-                      <h5 class="card-title text-center pb-5">Akreditasi Program Studi</h5>
-                      <h6 class="card-subtitle mb-2 text-body-secondary">S1 Teknik Industri</h6>
-                      <p class="card-text">Akreditasi Baik (LAM Teknik No. 0034/SK/LAM Teknik/AS/PT/VIII/2022)
-
-                        Download Sertifikat dan SK Akreditasi Institusi STT Cipasung <br><br>
-                        
-                        <a href="https://drive.google.com/file/d/1F7VuhL_Q_wAa7SsHmGykEZCCelxqmowD/view" class="text-success text-decoration-none">Sertifikat & SK Akreditasi</a></p>
+            <div class="col">
+                <div class="p-3">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body text-start">
+                            <h5 class="card-title text-center pb-5">Akreditasi Institusi</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">kreditasi C (BAN PT No.
+                                345/SK/BAN-PT/Akred/PT/XII/2018)</h6>
+                            <p class="card-text">Download Sertifikat dan SK Akreditasi Institusi STT Cipasung <br> <br>
+                                <a href="https://drive.google.com/file/d/1Dz93vL4h584fuGtgENJYKO0AY6fuJGGk/view"
+                                    class="text-success text-decoration-none">Sertifikat</a> | SK Akreditasi
+                            </p>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
-          </div>
+            <div class="col">
+                <div class="p-3">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body text-start">
+                            <h5 class="card-title text-center pb-5">Akreditasi Program Studi</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">S1 Teknik Industri</h6>
+                            <p class="card-text">Akreditasi Baik (LAM Teknik No. 0034/SK/LAM Teknik/AS/PT/VIII/2022)
+
+                                Download Sertifikat dan SK Akreditasi Institusi STT Cipasung <br><br>
+
+                                <a href="https://drive.google.com/file/d/1F7VuhL_Q_wAa7SsHmGykEZCCelxqmowD/view"
+                                    class="text-success text-decoration-none">Sertifikat & SK Akreditasi</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
     <!-- akhir content akreditasi -->
 
-   
+    <!-- Floating Chat dan tooltips -->
+    <a href="#" class="btn btn-primary btn-lg rounded-circle position-fixed bottom-0 end-0 m-4 shadow"
+        data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-placement="top" title="Hubungi Admin">
+        <i class="bi bi-chat-dots-fill"></i>
+    </a>
+    <!-- akhir Floating Chat dan tooltips -->
+
+
 
 
 
