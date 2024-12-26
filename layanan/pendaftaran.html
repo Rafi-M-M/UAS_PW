@@ -1,14 +1,23 @@
+<!-- <?php
+    require "../koneksi/koneksi.php";
+
+    $conn_string = "host=$host port=$port dbname=$dbname user=$user";
+
+
+?> -->
+
+
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sarana Olahraga</title>
+    <title>Pendaftaran</title>
     <!-- link icon boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- penutup link icon boostrap -->
-    <link rel="stylesheet" href="fasilitas.css">
+    <link rel="stylesheet" href="layanan.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
@@ -70,9 +79,9 @@
                                 Layanan
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="https://ijazah.kemdikbud.go.id/">Verifikasi Ijazah</a></li>
-                                <li><a class="dropdown-item" href="https://journal.sttcipasung.ac.id/index.php/CTP">Jurnal</a></li>
-                                <li><a class="dropdown-item" href="../layanan/pendaftaran.html">pendaftaran mahasiswa baru</a></li>
+                                <li><a class="dropdown-item" href="#">Verifikasi Ijazah</a></li>
+                                <li><a class="dropdown-item" href="#">Jurnal</a></li>
+                                <li><a class="dropdown-item" href="#">pendaftaran mahasiswa baru</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -92,16 +101,16 @@
     </nav>
     <!-- akhir navbar Navbar -->
 
-    <!-- Sarana Olah Raga -->
-    <div class="container struktur bg-warning pt-4">
-        <h2 class="text-center">Sarana Olahraga</h2>
+    <!-- Sarana Pendaftaran -->
+    <div class="container struktur bg-black text-white pt-4" style="margin-top: 120px;">
+        <h2 class="text-center">Pendaftaran</h2>
         <!-- fitur breadcrumb  -->
         <nav class="d-flex align-item-center justify-content-center"
             style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
             aria-label="breadcrumb">
             <ol class="breadcrumb mt-4 mb-5">
-                <li class="breadcrumb-item "><a href="../home.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Sarana Olahraga</li>
+                <li class="breadcrumb-item "><a href="../home.html" class="text-white">Home</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Pendaftaran</li>
             </ol>
         </nav>
         <!-- akhir fitur breadcrumb -->
@@ -154,75 +163,59 @@
     </div>
     <!-- akhir fitur Modal pada boostrap untuk fitur kontak pada navbar  -->
 
-    <!-- content Sarana Olahraga -->
-    <div class="container mt-5">
-        <p class="fst-italic">“Didalam tubuh yang sehat, terdapat jiwa yang kuat”</p>
-        <p style="text-align: justify;">Peribahasa tersebut biasa kita dengar untuk menggambarkan sangat pentingnya
-            olahraga. Maka dari itu Sekolah
-            Tinggi Teknologi Cipassung menyediakan berbagai sarana olahraga yang dapat dimanfaatkan oleh mahasiswa,
-            dosen maupun staff Sekolah Tinggi Teknologi Cipasung untuk menyalurkan hobby sekaligus menjaga kebugarannya
-            berupa <span class="fw-bold">Lapangan Bola Voli, GOR Badminton dan Lapangan Futsal</span></p>
-
-        <div class="container text-center mt-5">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body sarana_olahraga">
-                            <h5 class="card-title mt-3 mb-5">Bola Voli</h5>
-                            <img src="../img/sarana.jpeg" alt="" class="w-100" srcset="">
-                            <p class="card-text mt-5">Sekolah Tinggi Teknologi Cipasung menyediakan fasilitas lapangan
-                                bola
-                                voli yang dapat dimanfaatkan oleh mahasiswa dan dosen untuk berbagai aktivitas olahraga.
-                                Lapangan ini dirancang dengan standar yang baik, dilengkapi dengan permukaan yang rata
-                                dan net berkualitas, sehingga mendukung kenyamanan saat bermain. Lokasinya yang
-                                strategis di area kampus membuat lapangan ini mudah diakses oleh seluruh civitas
-                                akademika. Selain digunakan untuk kegiatan olahraga rutin, lapangan ini juga sering
-                                menjadi tempat penyelenggaraan turnamen antar mahasiswa, baik dalam lingkup internal
-                                maupun eksternal. Fasilitas ini bertujuan untuk mendorong gaya hidup sehat, kerja sama
-                                tim, dan pengembangan potensi di bidang olahraga.</p>
-                        </div>
-                    </div>
+    <!-- content Pendaftaran -->
+    <div class="container">
+        <div class="container mt-5 w-100 border rounded border-1 border-black p-5 bg-white">
+            <h2 class="text-center mb-4">Form Pendaftaran</h2>
+            <form action="proses_pendaftaran.php" method="POST" class="pendaftaran">
+                <!-- Nama -->
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control focus-ring" id="nama" name="nama" placeholder="Masukkan Nama" required>
                 </div>
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body sarana_olahraga">
-                            <h5 class="card-title mt-3 mb-5">GOR Futsal</h5>
-                            <img src="../img/gor_putsal.jpeg" alt="" class="w-100" srcset="">
-                            <p class="card-text mt-5">Sekolah Tinggi Teknologi Cipasung memiliki GOR Futsal yang menjadi
-                                salah satu fasilitas olahraga unggulan di kampus. GOR ini dirancang dengan standar
-                                kualitas tinggi, memiliki lantai yang aman dan nyaman untuk bermain, serta dilengkapi
-                                dengan pencahayaan yang memadai sehingga dapat digunakan pada siang maupun malam hari.
-                                GOR Futsal sering digunakan untuk aktivitas olahraga rutin, kompetisi futsal antar
-                                mahasiswa, maupun acara olahraga lainnya. Selain itu, fasilitas ini juga mendukung
-                                pengembangan bakat mahasiswa di bidang olahraga, menciptakan suasana yang kondusif untuk
-                                membangun kerja sama tim, semangat sportivitas, dan gaya hidup sehat di kalangan civitas
-                                akademika.</p>
-                        </div>
-                    </div>
+                
+                <!-- Alamat -->
+                <div class="mb-3">
+                    <label for="alamat" class="form-label">Alamat</label>
+                    <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan Alamat" required>
                 </div>
-                <div class="col-sm-6 mb-3 mb-sm-0 mt-5">
-                    <div class="card">
-                        <div class="card-body sarana_olahraga">
-                            <h5 class="card-title mt-3 mb-5">GOR Badminton</h5>
-                            <img src="../img/gor_batminton.jpg" alt="" class="w-100" srcset="">
-                            <p class="card-text mt-5">Sekolah Tinggi Teknologi Cipasung menyediakan GOR Badminton yang
-                                menjadi fasilitas olahraga favorit bagi mahasiswa dan dosen. GOR ini dirancang khusus
-                                dengan lapangan berstandar internasional, dilengkapi lantai yang aman dan pencahayaan
-                                optimal untuk mendukung kenyamanan saat bermain. GOR Badminton sering digunakan untuk
-                                latihan rutin, turnamen antar mahasiswa, dan kegiatan olahraga lainnya. Fasilitas ini
-                                bertujuan untuk mendukung pengembangan minat dan bakat di bidang bulu tangkis, sekaligus
-                                menjadi sarana menjaga kesehatan dan kebugaran. Dengan suasana yang nyaman dan kondusif,
-                                GOR Badminton mendorong semangat kompetitif, kerja sama tim, serta menjalin kebersamaan
-                                di antara civitas akademika kampus.</p>
-                        </div>
-                    </div>
+                
+                <!-- Nomor HP -->
+                <div class="mb-3">
+                    <label for="no_hp" class="form-label">Nomor HP</label>
+                    <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="Masukkan Nomor HP" required>
                 </div>
-            </div>
+                
+                <!-- Asal Sekolah -->
+                <div class="mb-3">
+                    <label for="asal_sekolah" class="form-label">Asal Sekolah</label>
+                    <input type="text" class="form-control" id="asal_sekolah" name="asal_sekolah" placeholder="Masukkan Asal Sekolah" required>
+                </div>
+                
+                <!-- Nama Ibu -->
+                <div class="mb-3">
+                    <label for="nama_ibu" class="form-label">Nama Ibu</label>
+                    <input type="text" class="form-control" id="nama_ibu" name="nama_ibu" placeholder="Masukkan Nama Ibu" required>
+                </div>
+                
+                <!-- Jurusan -->
+                <div class="mb-3">
+                    <label for="jurusan" class="form-label">Jurusan</label>
+                    <select class="form-select" id="jurusan" name="jurusan" required>
+                        <option value="" disabled selected>Pilih Jurusan</option>
+                        <option value="Informatika">Informatika</option>
+                        <option value="Industri">Industri</option>
+                    </select>
+                </div>
+                
+                <!-- Tombol Submit -->
+                <button type="submit" class="btn btn-primary w-100">Daftar</button>
+            </form>
         </div>
 
     </div>
 
-    <!-- akhir content Sarana Olahraga -->
+    <!-- akhir content Pendaftaran -->
 
     <!-- Floating Chat dan tooltips -->
     <a href="#" class="btn btn-primary btn-lg rounded-circle position-fixed bottom-0 end-0 m-4 shadow"

@@ -1,0 +1,27 @@
+<!-- 
+<?php
+// Import konfigurasi database
+require 'db_config.php';
+
+// Tangkap data dari form
+$nama = $_POST['nama'];
+$alamat = $_POST['alamat'];
+$no_hp = $_POST['no_hp'];
+$asal_sekolah = $_POST['asal_sekolah'];
+$nama_ibu = $_POST['nama_ibu'];
+$jurusan = $_POST['jurusan'];
+
+// Query untuk menyimpan data ke tabel
+$sql = "INSERT INTO pendaftaran (nama, alamat, no_hp, asal_sekolah, nama_ibu, jurusan) 
+        VALUES ('$nama', '$alamat', '$no_hp', '$asal_sekolah', '$nama_ibu', '$jurusan')";
+
+// Eksekusi query
+if ($conn->query($sql) === TRUE) {
+    echo "Pendaftaran berhasil!";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+// Tutup koneksi database
+$conn->close();
+?> -->

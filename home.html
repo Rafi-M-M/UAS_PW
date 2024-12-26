@@ -16,7 +16,7 @@
   </style>
 </head>
 
-<body>
+<body class="bg-body-secondary">
   <!-- Navbar -->
   <nav class="navbar bg-body-tertiary fixed-top navbar-background p-3 navbar-expand-lg">
     <div class="container-fluid">
@@ -28,14 +28,14 @@
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end navbar-background" tabindex="-1" id="offcanvasNavbar"
+      <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">STTCIPASUNG</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -69,8 +69,9 @@
                 Layanan
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Verifikasi Ijazah</a></li>
-                <li><a class="dropdown-item" href="#">Jurnal</a></li>
+                <li><a class="dropdown-item" href="https://ijazah.kemdikbud.go.id/">Verifikasi Ijazah</a></li>
+                <li><a class="dropdown-item" href="https://journal.sttcipasung.ac.id/index.php/CTP">Jurnal</a></li>
+                <li><a class="dropdown-item" href="../layanan/pendaftaran.html">pendaftaran mahasiswa baru</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -79,7 +80,7 @@
                 Tautan
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">LPPM</a></li>
+                <li><a class="dropdown-item" href="https://lppm.sttcipasung.ac.id/">LPPM</a></li>
                 <li><a class="dropdown-item" href="#">UPM</a></li>
               </ul>
             </li>
@@ -138,23 +139,23 @@
     <div class="hero-card">
       <img src="img/latar.jpg" alt="Background Image">
       <div class="hero-overlay">
-        <h5>
+        <!-- <h5>
           Welcome<br>
           <span style="font-size: 1.5rem;"> TO STTCIPASUNG</span>
-        </h5>
+        </h5> -->
       </div>
     </div>
   </div>
   <!-- End of Hero Section -->
 
   <!-- fitur breadcrumb -->
-  <div class="container bg-warning pt-5 mt-4">
-    <h2 class="text-center">Home</h2>
+  <div class="container bg-black text-white pt-5 mt-4">
+    <h2 class="text-center">Home </h2>
     <nav class="d-flex align-item-center justify-content-center"
       style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
       aria-label="breadcrumb">
       <ol class="breadcrumb mt-4 mb-5">
-        <li class="breadcrumb-item"><a href="../home.html" class="text-dark text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item"><a href="../home.html" class="text-dark text-decoration-none text-white">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page"></li>
       </ol>
     </nav>
