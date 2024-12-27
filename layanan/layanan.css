@@ -17,6 +17,18 @@
 .kontak{
     cursor: pointer;
 }
+
+.navbar .nav-link {
+  color: black !important;
+}
+
+.offcanvas .nav-link { 
+  color: white !important;
+}
+.offcanvas .nav-link:hover {
+  color: black !important;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -39,5 +51,6 @@ html, body {
 /* akhir navbar */
 
 /* file pendaftaran.html */
+  
  
 /* akhir file pendaftaran.html */

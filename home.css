@@ -17,6 +17,17 @@
 .kontak{
     cursor: pointer;
 }
+.navbar .nav-link {
+    color: black !important;
+  }
+
+.offcanvas .nav-link { 
+    color: white !important;
+ }
+ .offcanvas .nav-link:hover {
+    color: black !important;
+  }
+ 
 /* akhir navbar */
 
 
